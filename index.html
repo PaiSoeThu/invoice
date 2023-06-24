@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container vh-100 bg-light my-3 py-3">
+        <div class="row text-center">
+            <div class="col-6 mx-auto">
+                <h1 class="mb-3">Invoice Maker</h1>
+                <hr>
+            </div>
+        </div>
+        <form class="row mt-3 d-flex justify-content-center align-items-end w-100 text-center d-print-none" id="inputForm">
+            <div class="w-25">
+                <label for="items" class="form-label">Items</label>
+                <select name="" id="items" class="form-select">
+
+                </select>         
+            </div>
+            <div class="w-25">
+                <label for="quentity" class="form-label">Quentity</label>
+                <input type="number" name="" id="quentity" class="form-control" required>
+            </div>
+            <div class="w-25">
+                <button class="btn btn-primary rounded-5 addBtn">Add</button>
+            </div>
+        </form>
+        <div class="row mt-5">
+            <div class="col-12">
+                <table class="table text-center">
+                    <thead>
+                      <tr>
+                        <th scope="col">id</th>
+                        <th scope="col">Item</th>
+                        <th scope="col">Quentity</th>
+                        <th scope="col">Unit Price</th>
+                      </tr>
+                    </thead>
+                    <tbody class="tbody">
+                    
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Total</td>
+                            <td class="total"></td>
+                        </tr>
+                    
+                    </tfoot>
+                  </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-end">
+                <a href="#" class="btn btn-primary ms-auto p-3 d-print-none" onclick="print()">Print</a>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+
+</body>
+</html>

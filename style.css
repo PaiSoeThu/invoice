@@ -1,0 +1,7 @@
+.btnDel{
+    display: none;
+}
+
+.forDel:hover .btnDel{
+    display: block;
+}
